@@ -33,7 +33,6 @@ public class CustomerStatement {
             result.append("\t").append(rental.getMovie().getTitle()).append("\t").append(String.valueOf(thisAmount)).append("\n");
             totalAmount += thisAmount;
         }
-
         return addDownColontitle(result, totalAmount,frequentRenterPoints).toString();
     }
 

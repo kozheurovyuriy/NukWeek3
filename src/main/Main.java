@@ -18,7 +18,8 @@ public class Main {
         customerStatement1.addRental(new Rental(new Movie(regularMovie,"Rembo"), 4));
         customerStatement1.addRental(new Rental(new Movie(newReleaseMovie,"OperationI"), 3));
 
-        System.out.println(customerStatement1.statement());
+        HtmlCreator htmlCreator = new HtmlCreator();
+        htmlCreator.createHtmlFile(customerStatement1.statement());
     }
 }
 

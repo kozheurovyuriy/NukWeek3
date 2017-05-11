@@ -12,13 +12,13 @@ public class Main {
 
         Customer customer1 = new Customer("customerName1");
 
-        customer1.addRental(new Rental(new Movie(childrensMovie, "Titanic"), 5));
-        customer1.addRental(new Rental(new Movie(regularMovie,"Rembo"), 4));
-        customer1.addRental(new Rental(new Movie(newReleaseMovie,"OperationI"), 3));
+        CustomerStatement customerStatement1 = new CustomerStatement(customer1);
 
-        System.out.println(customer1.statement());
+        customerStatement1.addRental(new Rental(new Movie(childrensMovie, "Titanic"), 5));
+        customerStatement1.addRental(new Rental(new Movie(regularMovie,"Rembo"), 4));
+        customerStatement1.addRental(new Rental(new Movie(newReleaseMovie,"OperationI"), 3));
 
-
+        System.out.println(customerStatement1.statement());
     }
 }
 
